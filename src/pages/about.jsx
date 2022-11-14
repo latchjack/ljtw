@@ -10,7 +10,7 @@ import {
   LinkedInIcon,
   MailIcon,
 } from '@/components/SocialIcons'
-import portraitImage from '@/images/latch_headshot.jpeg'
+import portraitImage from '@/images/latch-headshot.jpeg'
 
 export default function About() {
   return (

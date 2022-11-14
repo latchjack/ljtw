@@ -3,48 +3,67 @@ import Head from 'next/head'
 
 import { Card } from '@/components/Card'
 import { SimpleLayout } from '@/components/SimpleLayout'
-import logoAnimaginary from '@/images/logos/animaginary.svg'
-import logoCosmos from '@/images/logos/cosmos.svg'
-import logoHelioStream from '@/images/logos/helio-stream.svg'
-import logoOpenShuttle from '@/images/logos/open-shuttle.svg'
-import logoPlanetaria from '@/images/logos/planetaria.svg'
+import logoSnake from '@/images/logos/bug.jpg'
+import logoTwenty from '@/images/logos/twenty.jpg'
+import logoBasketball from '@/images/logos/basketball.png'
+import logoGeocachr from '@/images/logos/geo-planet.svg'
+// import logoPenseive from '@/images/logos/penseive.jpg'
 
 const projects = [
   {
-    name: 'Planetaria',
-    description:
-      'Creating technology to empower civilians to explore space on their own terms.',
-    link: { href: 'http://planetaria.tech', label: 'planetaria.tech' },
-    logo: logoPlanetaria,
+    name: 'Snake II',
+    description: 'A rebuild of the classic, written in vanilla JavaScript.',
+    link: {
+      href: 'https://latchjack.github.io/sei-project-1/',
+      repo: 'https://github.com/latchjack/sei-project-1',
+      label: 'github.com',
+    },
+    logo: logoSnake,
   },
   {
-    name: 'Animaginary',
+    name: 'TopTwenty',
     description:
-      'High performance web animation library, hand-written in optimized WASM.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoAnimaginary,
+      'A movie website built with React, that displays the best 20 films of each genre and year.',
+    link: {
+      href: 'https://top-twenty.herokuapp.com/',
+      repo: 'https://github.com/latchjack/sei-project-2',
+      label: 'github.com',
+    },
+    logo: logoTwenty,
   },
   {
-    name: 'HelioStream',
+    name: 'GeocachR',
     description:
-      'Real-time video streaming library, optimized for interstellar transmission.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoHelioStream,
+      'A geo-caching treasure hunting website. Front-end built with React and backend built with Node and MongoDB.',
+    link: {
+      href: 'http://getgeocachr.herokuapp.com/',
+      repo: 'https://github.com/latchjack/sei-group-project',
+      label: 'github.com',
+    },
+    logo: logoGeocachr,
   },
   {
-    name: 'cosmOS',
+    name: 'NBA Legends',
     description:
-      'The operating system that powers our Planetaria space shuttles.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoCosmos,
+      'The React front-end to an API I built. The back-end built with Node and MongoDB.',
+    link: {
+      href: 'http://nba-legend.herokuapp.com/',
+      repo: 'https://github.com/latchjack/nba-legends-api',
+      label: 'github.com',
+    },
+    logo: logoBasketball,
   },
-  {
-    name: 'OpenShuttle',
-    description:
-      'The schematics for the first rocket I designed that successfully made it to orbit.',
-    link: { href: '#', label: 'github.com' },
-    logo: logoOpenShuttle,
-  },
+  // {
+  //   name: 'Pensive',
+  //   description:
+  //     'The schematics for the first rocket I designed that successfully made it to orbit.',
+  //   link: {
+  //     href: 'http://pensiveworld.herokuapp.com/',
+  //     repo: 'https://github.com/latchjack/sei-final-project',
+  //     label: 'github.com',
+  //   },
+  //   logo: logoPenseive,
+  // },
 ]
 
 function LinkIcon(props) {
@@ -67,7 +86,7 @@ export default function Projects() {
       </Head>
       <SimpleLayout
         title="Things I’ve built, trying to put my dent in the universe."
-        intro="I’ve worked on tons of little projects over the years but these are the ones that I’m most proud of. Many of them are open-source, so if you see something that piques your interest, check out the code and contribute if you have ideas for how it can be improved."
+        intro="I spend some of my evenings after work digging into new technologies, so I can keep improving. I find the best way to learn (for me anyhow) about development, is to keep building new things. Here are some of the projects I worked on whilst at General Assembly. However there is more to come, watch this space :)."
       >
         <ul
           role="list"
