@@ -11,12 +11,12 @@ export default function Uses() {
         <title>Uses - Latch Jack</title>
         <meta
           name="description"
-          content="Software I use, gadgets I love, and other things I recommend."
+          content="Software I use, tech I love, and other things I recommend."
         />
       </Head>
       <SimpleLayout
-        title="Software I use, gadgets I love, and other things I recommend."
-        intro="I get asked a lot about the things I use to build software, stay productive, or buy to fool myself into thinking I’m being productive when I’m really just procrastinating. Here’s a big list of all of my favourite stuff."
+        title="Software I use, tech I love, and other things I recommend."
+        intro="I've seen this Uses pages on other developer's websites and thought it looked pretty cool. So here's mine... A list of what I use to build software and stay productive."
       >
         <div className="space-y-20">
           <ToolsSection title="Workstation">
@@ -51,11 +51,11 @@ export default function Uses() {
               little small for my hands.
             </Tool>
             <Tool title="ErgoDesk Atlas Mini" href="https://ergodesks.co.uk/">
-              Working at a desk isn&apos;t great for your back, and I&apos;d
-              often have a back-ache at the end of the day. I got this desk to
-              enable me to switch up my position throughout the day. It&apos;s
-              really helped. Aside from that, it&apos;s a really nice and solid
-              desk (it can lift up to 100kg).
+              Sitting at a desk all day isn&apos;t great for your back, and
+              I&apos;d often have a back-ache at the end of the day. I got this
+              desk to enable me to switch up my position throughout the day.
+              It&apos;s really helped. Aside from that, it&apos;s a really nice,
+              solid desk (it can also lift up to 100kg).
             </Tool>
           </ToolsSection>
           <ToolsSection title="Development tools">
