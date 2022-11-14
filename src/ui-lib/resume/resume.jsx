@@ -27,7 +27,7 @@ function Resume() {
     },
     {
       company: 'General Assembly',
-      title: 'Software Engineering Immersive Student',
+      title: 'Software Engineering Student',
       logo: gaLogo,
       start: '2019',
       end: '2020',
