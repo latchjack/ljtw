@@ -1,6 +1,8 @@
 import Image from 'next/image'
 
 import nccGroupLogo from '@/images/logos/ncc-group-logo.svg'
+import gaLogo from '@/images/logos/ga-logo.png'
+import issLogo from '@/images/logos/integrated-service-solutions.svg'
 import { Button } from '@/components/Button'
 import { BriefcaseIcon, ArrowDownIcon } from '@/ui-lib/site-icons/site-icons'
 
@@ -22,6 +24,20 @@ function Resume() {
       logo: nccGroupLogo,
       start: '2020',
       end: '2022',
+    },
+    {
+      company: 'General Assembly',
+      title: 'Software Engineering Immersive Student',
+      logo: gaLogo,
+      start: '2019',
+      end: '2020',
+    },
+    {
+      company: 'I.S.S',
+      title: 'Senior Administrator',
+      logo: issLogo,
+      start: '2015',
+      end: '2019',
     },
   ]
 

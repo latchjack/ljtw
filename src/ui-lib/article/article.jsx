@@ -1,4 +1,5 @@
 import { Card } from '@/components/Card'
+import { formatDate } from '@/lib/formatDate'
 
 function Article({ article }) {
   return (
