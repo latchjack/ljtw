@@ -3,13 +3,24 @@ import { ArticleLayout } from '@/components/ArticleLayout'
 export const meta = {
   author: 'Latch Jack',
   date: '2022-11-14',
-  title: 'Arrays: An introduction.',
-  description: 'Arrays? What are they and how do you use them?.',
+  title: 'Arrays methods: An introduction.',
+  description: 'Arrays methods? What are they and how do you use them?.',
 }
 
 export default (props) => <ArticleLayout meta={meta} {...props} />
 
-When you’re writing code, one of the most common objects you'll come across is an array. Arrays are a great way to store a collection of data and come with many handy methods built in.
+When you’re writing code, one of the most common things you'll come across is an array. If you don't know or aren't sure what an array is, this first section is for you. If you do, feel free to jump to the next section.
+
+## What is an array?
+
+Arrays are a fundamental part of (mostly) every programming language.
+Arrays are a great way to store a collection of data and come with many handy methods built in.
+
+A great way that I was taught about arrays was to think of them like a shopping list.
+
+```js
+let shoppingList = ['eggs', 'milk', 'bread']
+```
 
 Arrays are zero-indexed, meaning that the first index (item in the array) is 0.
 For example in the `animals` array below, `dog` is at index 0 and `cat` is at index 1.
@@ -23,7 +34,7 @@ console.log(animals[1]) // 'cat'
 console.log(animals.length) // result will be 4
 ```
 
-Often arrays will be used to store data in objects, so that they can be used store more information. Like below
+Often arrays will be used to store data in objects, so that they can be used store more information. Like below...
 
 ```js
 let animals = [
@@ -52,73 +63,54 @@ let animals = [
 
 ## Array methods
 
-Lorem markdownum, bracchia in redibam! Terque unda puppi nec, linguae posterior
-in utraque respicere candidus Mimasque formae; quae conantem cervice. Parcite
-variatus, redolentia adeunt. Tyrioque dies, naufraga sua adit partibus celanda
-torquere temptata, erit maneat et ramos, [iam](#) ait dominari
-potitus! Tibi litora matremque fumantia condi radicibus opusque.
-
-Deus feram verumque, fecit, ira tamen, terras per alienae victum. Mutantur
-levitate quas ubi arcum ripas oculos abest. Adest [commissaque
-victae](#) in gemitus nectareis ire diva
-dotibus ora, et findi huic invenit; fatis? Fractaque dare superinposita
-nimiumque simulatoremque sanguine, at voce aestibus diu! Quid veterum hausit tu
-nil utinam paternos ima, commentaque.
+Arrays have many powerful methods built into them which can help you do lots of cool things when you're building applications.
 
 ### toString
 
-### Map
+The toString method is used to transform an array into a string. So our shopping list from earlier would become...
+
+```js
+let shoppingList = ['eggs', 'milk', 'bread']
+
+let shoppingAsString = shoppingList.toString()
+console.log(shoppingAsString) // result would be 'eggs, milk, bread'
+```
+
+### map
+
+The map method creates a new array that will be filled with the results of the function you give it.
+In the example below, I use the map method to create an array full of the integers array numbers multiplied by 2.
+
+```js
+let integers = [2, 4, 6, 8]
+
+let doubleIt = integers.map((number) => number * 2)
+console.log(doubleIt) // result would be [4, 8, 12, 16]
+```
 
 ### flat
 
-```c
-exbibyte_wins = gigahertz(3);
-grayscaleUtilityClient = control_uat;
-pcmciaHibernate = oop_virus_console(text_mountain);
-if (stateWaisFirewire >= -2) {
-    jfs = 647065 / ldapVrml(tutorialRestore, 85);
-    metal_runtime_parse = roomComputingResolution - toolbarUpload +
-            ipx_nvram_open;
-} else {
-    maximizeSidebar *= suffix_url(flatbed + 2, requirements_encoding_node +
-            only_qbe_media, minicomputer);
-}
+The flat method creates a new array which has been 'flattened'. This method is meant to be used on an array with sub-arrays. It will then return it as one single array or as a specified depth.
+
+For example...
+
+```js
+let subArrays = [[2], [4], [6], [8]]
+
+let flattenIt = subArrays.flat()
+console.log(flattenIt) // result would be [2, 4, 6, 8]
 ```
 
-Aere repetiti cognataque natus. Habebat vela solutis saepe munus nondum adhuc
-oscula nomina pignora corpus deserat.
+These are just a few of the numerous array methods that you may come across in your programming journey.
 
-## Lethaei Pindumve me quae dinumerat Pavor
+Some of the ones I use frequently are...
 
-Idem se saxa fata pollentibus geminos; quos pedibus. Est urnis Herses omnes nec
-divite: et ille illa furit sim verbis Cyllenius.
+1. includes()
+2. filter()
+3. push()
+4. forEach()
+5. concat()
 
-1. Captus inpleverunt collo
-2. Nec nam placebant
-3. Siquos vulgus
-4. Dictis carissime fugae
-5. A tacitos nulla viginti
+This is the first programming blog post I've ever written. I'd love to improve, so if you have any tips or critiques, I'd love to hear it.
 
-Ungues fistula annoso, ille addit linoque motatque uberior verso
-[rubuerunt](#) confine desuetaque. _Sanguine_ anteit
-emerguntque expugnacior est pennas iniqui ecce **haeret** genus: peiora imagine
-fossas Cephisos formosa! Refugitque amata [refelli](#)
-supplex. Summa brevis vetuere tenebas, hostes vetantis, suppressit, arreptum
-regna. Postquam conpescit iuvenis habet corpus, et erratica, perdere, tot mota
-ars talis.
-
-```c
-digital.webcam_dual_frequency = webmasterMms;
-if (5 + language_standalone_google) {
-    cc_inbox_layout *= file_character;
-    task += p;
-    lockUnicode += enterprise_monochrome(tokenFunctionPersonal, keyVirtual,
-            adf);
-}
-windows_binary_esports(87734, array(restoreRomTopology, adRaw(407314),
-        dongleBashThumbnail), interpreter);
-```
-
-Sit volat naturam; motu Cancri. Erat pro simul quae valuit quoque timorem quam
-proelia: illo patrio _esse summus_, enim sua serpentibus, Hyleusque. Est coniuge
-recuso; refert Coroniden ignotos manat, adfectu.
+Thanks for reading!
