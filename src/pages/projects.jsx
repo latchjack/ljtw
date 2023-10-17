@@ -86,13 +86,14 @@ export default function Projects() {
       </Head>
       <SimpleLayout
         title="Things I’ve built, trying to put my dent in the universe."
-        intro="I spend some of my evenings after work digging into new technologies, so I can keep improving. I find the best way to learn (for me anyhow) about development, is to keep building new things. Here are some of the projects I worked on whilst at General Assembly. However there is more to come, watch this space :)."
+        intro="I spend some of my evenings after work digging into new technologies, so I can keep improving. I find the best way to learn (for me anyhow) about development, is to keep building new things. Watch this space :)."
       >
         <ul
           role="list"
           className="grid grid-cols-1 gap-x-12 gap-y-16 sm:grid-cols-2 lg:grid-cols-3"
         >
-          {projects.map((project) => (
+          <p className="text-zinc-800 dark:text-zinc-100">Coming soon...</p>
+          {/* {projects.map((project) => (
             <Card as="li" key={project.name}>
               <div className="relative z-10 flex h-12 w-12 items-center justify-center rounded-full bg-white shadow-md shadow-zinc-800/5 ring-1 ring-zinc-900/5 dark:border dark:border-zinc-700/50 dark:bg-zinc-800 dark:ring-0">
                 <Image
@@ -111,7 +112,7 @@ export default function Projects() {
                 <span className="ml-2">{project.link.label}</span>
               </p>
             </Card>
-          ))}
+          ))} */}
         </ul>
       </SimpleLayout>
     </>
